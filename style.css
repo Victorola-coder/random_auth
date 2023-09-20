@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+body,
+html {
+  background: url("/images/bg.png") repeat center center/cover;
+  background-size: 5%;
+}
