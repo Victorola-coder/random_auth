@@ -2,15 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 1px solid red;
-}
-
 body,
 html {
   background: url("/images/bg.png") repeat center center/cover;
-  background-size: 5%;
+  background-size: 10%;
+  @apply bg-fixed;
+}
+
+@layer components {
+  .box {
+    @apply flex flex-col gap-0 bg-[#F2F2F2] rounded-2xl py-2 px-4;
+  }
+  .box label {
+    @apply text-sm text-[#666666];
+  }
+  .box input {
+    @apply bg-inherit focus:outline-none;
+  }
+  .box.error {
+    @apply border-[0.13rem] border-solid border-[#CE1616];
+  }
+}
+
+i.error::after {
+  content: " is required";
+}
+i.error {
+  @apply text-[#CE1616] text-sm not-italic pl-2 font-medium leading-[16px];
+  text-shadow: 0px 0px 0px;
+  @apply hidden;
+}
+
+input[type=checkbox]::before {
+  border-width: 0.2rem;
+  border-color: #EBE5DF;
+  padding: 7px;
+}
+input[type=checkbox]:hover::before {
+  border-color: #D6AA82;
+}
+
+p.reclaim a {
+  @apply text-[#0267c1] hover:text-[#355988];
+}
+
+footer ul li a {
+  @apply text-[#003366] underline;
 }

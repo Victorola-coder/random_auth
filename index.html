@@ -12,16 +12,70 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.png"/>
   </head>
   <body>
     <main>
       <header>
         <nav>
-          <h1 class="bg-red-600 text-3xl font-bold underline">Hello world!</h1>
+          <!-- <h1 class="bg-red-600 text-3xl font-bold underline">Hello world!</h1> -->
+          <form class="lg:w-[37.5%] mx-auto mb-20 w-[85%] mt-10 flex flex-col gap-10 lg:mt-24 rounded-2xl bg-white py-8 px-8">
+            <div class="text-right">
+              <button type="button" class="rounded-full focus:shadow-lg focus:shadow-[#60A0D8] shadow-inner hover:bg-[#D8C8B7] h-4 w-4 inline-flex items-center text-lg font-bold p-5 justify-center bg-[#F0F0F0] text-[#9C581B]">
+                <span class="-translate-y-0.5">•••</span>
+              </button>
+            </div>
+            <img src="/images/images_brand-logo-wide.png" class="aspect-video h-16 mx-auto"/>
+            <div class="px-3 flex flex-col gap-4">
+              <div>
+                <div class="box">
+                   <label>Username</label>
+                   <input type="text">
+                </div> 
+                <i class="error">Username</i>
+              </div>
+              <div>
+                <div class="box">
+                   <label>Password</label>
+                   <input type="password">
+                </div> 
+                <i class="error">Password</i>
+              </div>
+              <div class="flex items-start gap-2 text-[#333333] text-sm">
+                <input type="checkbox" class="appearance-none w-12 hover:before:h-6 aspect-square hover:before:w-6 h-6 before:w-5 before:border-solid justify-start flex items-center checked:justify-end px-0 before:h-5 before:bg-[#9C581B] before:inline-block before:rounded-full bg-[#EBE5DF] rounded-xl"> Remember Me
+              </div>
+              <div class="flex flex-col gap-6 justify-center items-center">
+                <button class="bg-[#9C581B] w-full font-semibold text-center pt-2 pb-2.5 text-white rounded-3xl text-base">Log In</button>
+                <p class="text-sm reclaim text-[#333333]">Forgot <a href="#">Username</a> or <a href="#">Password</a>?</p>
+                <h3 class="text-[#9C581B] font-semibold text py-2 rounded-3xl hover:bg-[#EBE5DF] text-center w-full">Register a New Account</h3>
+              </div>
+            </div>
+          </form>
         </nav>
       </header>
 
-      <footer></footer>
+      <footer class="bg-white pt-8 pb-14">
+        <div class="lg:w-[80%] mx-auto flex items-center justify-center flex-col gap-6 lg:gap-0 lg:grid lg:grid-cols-2">
+            <div class="flex flex-col justify-center lg:justify-normal items-start gap-3">
+              <div class="flex items-center lg:block w-full justify-center">
+                <ul class="lg:inline-grid items-center justify-center flex flex-col lg:grid-cols-4 gap-y-3">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Mobile</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Privacy & Settings</a></li>
+                  <li><a href="#">Browser Support</a></li>
+                </ul>
+              </div>
+              <div class="text-sm text-[#003366]">Copyright © 2023 All rights reserved.</div>
+            </div>
+            <div class="flex gap-4 justify-end">
+              <p class="text-sm text-[#003366]">Routing number: <b>323274461</b></p>
+              <div>
+
+              </div>
+            </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
